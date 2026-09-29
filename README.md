@@ -1,6 +1,6 @@
 # Hi, I'm Anusree 👋
 
-**QA Automation Engineer**: I build test automation for web UIs and REST APIs with Python, Playwright and pytest, and I performance-test APIs with Apache JMeter. I use AI-assisted workflows (my own reusable Claude Code skills) to design and generate them, and I review and verify every result.
+**QA Automation Engineer**: I build test automation for web UIs and REST APIs with Python, Playwright and pytest, test APIs with Postman and Newman, and performance-test them with Apache JMeter. I use AI-assisted workflows (my own reusable Claude Code skills) to design and generate them, and I review and verify every result.
 
 ## 🧪 Featured projects
 
@@ -26,6 +26,17 @@ An API suite for a fake e-commerce API with a real JWT login, refresh and expiry
 - Found **13 real defects**, including sensitive data exposure and token misuse, tracked as strict xfails
 - Credentials redacted from all logs and reports; parallel runs; Allure; CI on GitHub Actions
 
+### [API Testing with Postman + Newman: DummyJSON](https://github.com/Anusreepsuresh074/dummyjson-postman-newman)
+![API tests](https://github.com/Anusreepsuresh074/dummyjson-postman-newman/actions/workflows/newman.yml/badge.svg) · **[Live reports](https://anusreepsuresh074.github.io/dummyjson-postman-newman/)**
+
+A Postman collection for the same JWT-protected API, run from the command line and in CI with Newman.
+
+- **58 requests** from a reviewed test case matrix: auth, products, search, categories, simulated writes, protected routes
+- `pm.test` assertions, **JSON Schema** checks, token **chaining** through variables, collection-level shared checks
+- **Data-driven** search from a CSV file; read-your-write checks proving writes are simulated
+- **13 real defects** kept visible in a non-gating folder; credentials only at run time, every report scanned for leaks
+- CI on GitHub Actions: static checks → gating and non-gating Newman runs → HTML reports on GitHub Pages; nightly schedule
+
 ### [UI Test Automation: automationexercise.com](https://github.com/Anusreepsuresh074/automationexercise-ui-tests-eCommerce)
 ![UI Tests](https://github.com/Anusreepsuresh074/automationexercise-ui-tests-eCommerce/actions/workflows/ui-tests.yml/badge.svg) · **[Live report](https://anusreepsuresh074.github.io/automationexercise-ui-tests-eCommerce/)**
 
@@ -49,7 +60,7 @@ A hotel-booking REST API suite covering all 8 endpoints.
 
 ## 🛠️ Toolbox
 
-`Python` · `Playwright` · `pytest` · `requests` · `Apache JMeter` · `JSON Schema` · `Allure` · `GitHub Actions` · `GitHub Pages` · `Docker` · `ruff` · `mypy` · `axe-core` · `Claude Code`
+`Python` · `Playwright` · `pytest` · `requests` · `Postman` · `Newman` · `Apache JMeter` · `JSON Schema` · `Allure` · `GitHub Actions` · `GitHub Pages` · `Docker` · `ruff` · `mypy` · `axe-core` · `Claude Code`
 
 **Practices:** Page Object Model · test design (happy / negative / boundary / auth / a11y) · traceable test-case matrices · performance test planning (NFRs, workload models, SLAs) · load / stress / spike testing · result analysis and reporting · CI/CD · parallel & cross-browser testing · flaky-test root-causing
 
