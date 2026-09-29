@@ -34,7 +34,7 @@ A Postman collection for the same JWT-protected API, run from the command line a
 - **58 requests** from a reviewed test case matrix: auth, products, search, categories, simulated writes, protected routes
 - `pm.test` assertions, **JSON Schema** checks, token **chaining** through variables, collection-level shared checks
 - **Data-driven** search from a CSV file; read-your-write checks proving writes are simulated
-- **13 real defects** kept visible in a non-gating folder; credentials only at run time, every report scanned for leaks
+- The **same 13 defects**, re-confirmed in Postman and kept visible in a non-gating folder; credentials only at run time, every report scanned for leaks
 - CI on GitHub Actions: static checks → gating and non-gating Newman runs → HTML reports on GitHub Pages; nightly schedule
 
 ### [UI Test Automation: automationexercise.com](https://github.com/Anusreepsuresh074/automationexercise-ui-tests-eCommerce)
