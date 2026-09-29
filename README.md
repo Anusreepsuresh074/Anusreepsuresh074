@@ -1,8 +1,19 @@
 # Hi, I'm Anusree 👋
 
-**QA Automation Engineer**: I build test automation for web UIs and REST APIs with Python, Playwright and pytest, test APIs with Postman and Newman, and performance-test them with Apache JMeter. I use AI-assisted workflows (my own reusable Claude Code skills) to design and generate them, and I review and verify every result.
+**QA Automation Engineer**: I build test automation for web UIs, REST APIs and Android apps with Python, Playwright, Appium and pytest, test APIs with Postman and Newman, and performance-test them with Apache JMeter. I use AI-assisted workflows (my own reusable Claude Code skills) to design and generate them, and I review and verify every result.
 
 ## 🧪 Featured projects
+
+### [Mobile Test Automation: My Demo App (Android)](https://github.com/Anusreepsuresh074/mydemoapp-mobile-automation)
+![Mobile tests](https://github.com/Anusreepsuresh074/mydemoapp-mobile-automation/actions/workflows/mobile-tests.yml/badge.svg) · **[Test Summary Report](https://github.com/Anusreepsuresh074/mydemoapp-mobile-automation/blob/main/docs/test-summary-report.md)**
+
+End-to-end tests for Sauce Labs' My Demo App, a native Android shopping app: catalogue, sorting, product, cart, sign-in, checkout and app state.
+
+- **Appium 3 (UiAutomator2) + Python + pytest**, a four-layer framework: screens → actions → flows → tests
+- **19 tests** from reviewed test cases, every locator confirmed on the running app; explicit waits only, no retries
+- Found **2 real app defects** (any password accepted; quantity reaches 0), tracked as strict xfails
+- Environment health check before every run; Allure reports with screenshots and page source on failure
+- CI on GitHub Actions on an **Android emulator** (Pixel 6, API 35, KVM): smoke on every push, full regression nightly
 
 ### [Performance Testing: DummyJSON e-commerce API](https://github.com/Anusreepsuresh074/ecommerce-performance-testing)
 ![Performance tests](https://github.com/Anusreepsuresh074/ecommerce-performance-testing/actions/workflows/perf.yml/badge.svg) · **[Live dashboards](https://anusreepsuresh074.github.io/ecommerce-performance-testing/)** · **[Test Summary Report](https://github.com/Anusreepsuresh074/ecommerce-performance-testing/blob/main/docs/test-summary-report.md)**
@@ -60,9 +71,9 @@ A hotel-booking REST API suite covering all 8 endpoints.
 
 ## 🛠️ Toolbox
 
-`Python` · `Playwright` · `pytest` · `requests` · `Postman` · `Newman` · `Apache JMeter` · `JSON Schema` · `Allure` · `GitHub Actions` · `GitHub Pages` · `Docker` · `ruff` · `mypy` · `axe-core` · `Claude Code`
+`Python` · `Playwright` · `Appium` · `pytest` · `requests` · `Postman` · `Newman` · `Apache JMeter` · `JSON Schema` · `Allure` · `GitHub Actions` · `GitHub Pages` · `Docker` · `ruff` · `mypy` · `axe-core` · `Claude Code`
 
-**Practices:** Page Object Model · test design (happy / negative / boundary / auth / a11y) · traceable test-case matrices · performance test planning (NFRs, workload models, SLAs) · load / stress / spike testing · result analysis and reporting · CI/CD · parallel & cross-browser testing · flaky-test root-causing
+**Practices:** Page Object Model · mobile testing on Android emulators · test design (happy / negative / boundary / auth / a11y) · traceable test-case matrices · performance test planning (NFRs, workload models, SLAs) · load / stress / spike testing · result analysis and reporting · CI/CD · parallel & cross-browser testing · flaky-test root-causing
 
 ## 📫 Contact
 
