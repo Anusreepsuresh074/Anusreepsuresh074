@@ -69,6 +69,16 @@ A hotel-booking REST API suite covering all 8 endpoints.
 - **Read-your-write verification**: every write is confirmed with a follow-up read
 - Parallel runs, retries for transient network errors, Allure reporting, CI on GitHub Actions
 
+### [AI Test Generation: QA Script Generator](https://github.com/Anusreepsuresh074/QA-Script-Generator)
+
+A study project on AI agents, built with two teammates: it reads a Jira ticket and the API's spec, and an LLM turns the acceptance criteria into test scenarios and runnable test scripts.
+
+- **Python + FastAPI**, with **Ollama** as the main LLM and **Groq** as the backup, plus retries and a quality filter on weak scenarios
+- Matches each acceptance criterion to an endpoint by keyword, embedding (sentence-transformers) or LLM scoring
+- My part: support for **GraphQL, SOAP, gRPC and WebSocket** specs (a parser factory), and **Robot Framework, Jest and Postman** output beside Pytest
+- Also mine: a **Slack-to-Jira bug agent** that decides which messages are real QA issues and files tickets
+- An **offline demo** (fake Jira, a mock Customers API, a local model) that showed why AI-written tests must be run and reviewed before they are trusted
+
 ## 🛠️ Toolbox
 
 `Python` · `Playwright` · `Appium` · `pytest` · `requests` · `Postman` · `Newman` · `Apache JMeter` · `JSON Schema` · `Allure` · `GitHub Actions` · `GitHub Pages` · `Docker` · `ruff` · `mypy` · `axe-core` · `Claude Code`
