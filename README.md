@@ -9,9 +9,9 @@
 
 End-to-end tests for Sauce Labs' My Demo App, a native Android shopping app: catalogue, sorting, product, cart, sign-in, checkout and app state.
 
-- **Appium 3 (UiAutomator2) + Python + pytest**, a four-layer framework: screens → actions → flows → tests
-- **19 tests** from reviewed test cases, every locator confirmed on the running app; explicit waits only, no retries
-- Found **2 real app defects** (any password accepted; quantity reaches 0), tracked as strict xfails
+- **Appium 3 (UiAutomator2) + Python + pytest**, built with the **Page Object Model**
+- **62 test cases** (28 positive, 18 negative, 16 edge), 43 of them found through six exploratory testing sessions; every locator confirmed on the running app; explicit waits only, no retries
+- Found **8 real app defects**, including a crash and two security issues, tracked as strict xfails
 - Environment health check before every run; Allure reports with screenshots and page source on failure
 - CI on GitHub Actions on an **Android emulator** (Pixel 6, API 35, KVM): smoke on every push, full regression nightly
 
@@ -77,4 +77,4 @@ A hotel-booking REST API suite covering all 8 endpoints.
 
 ## 📫 Contact
 
-📧 [anusreepsuresh074@gmail.com](mailto:anusreepsuresh074@gmail.com)
+📧 [anusreepsuresh074@gmail.com](mailto:anusreepsuresh074@gmail.com) · 💼 [LinkedIn](https://www.linkedin.com/in/anusree-p-671700184)
