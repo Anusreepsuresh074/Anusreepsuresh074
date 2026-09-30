@@ -5,7 +5,7 @@
 ## 🧪 Featured projects
 
 ### [Mobile Test Automation: My Demo App (Android)](https://github.com/Anusreepsuresh074/mydemoapp-mobile-automation)
-![Mobile tests](https://github.com/Anusreepsuresh074/mydemoapp-mobile-automation/actions/workflows/mobile-tests.yml/badge.svg) · **[Test Summary Report](https://github.com/Anusreepsuresh074/mydemoapp-mobile-automation/blob/main/docs/test-summary-report.md)**
+![Mobile tests](https://github.com/Anusreepsuresh074/mydemoapp-mobile-automation/actions/workflows/mobile-tests.yml/badge.svg) · **[Live report](https://anusreepsuresh074.github.io/mydemoapp-mobile-automation/)** · **[Test Summary Report](https://github.com/Anusreepsuresh074/mydemoapp-mobile-automation/blob/main/docs/test-summary-report.md)**
 
 End-to-end tests for Sauce Labs' My Demo App, a native Android shopping app: catalogue, sorting, product, cart, sign-in, checkout and app state.
 
@@ -42,14 +42,14 @@ An API suite for a fake e-commerce API with a real JWT login, refresh and expiry
 
 A Postman collection for the same JWT-protected API, run from the command line and in CI with Newman.
 
-- **58 requests** from a reviewed test case matrix: auth, products, search, categories, simulated writes, protected routes
+- **61 requests** from a reviewed test case matrix: auth, products, search, categories, simulated writes, protected routes
 - `pm.test` assertions, **JSON Schema** checks, token **chaining** through variables, collection-level shared checks
 - **Data-driven** search from a CSV file; read-your-write checks proving writes are simulated
 - The **same 13 defects**, re-confirmed in Postman and kept visible in a non-gating folder; credentials only at run time, every report scanned for leaks
 - CI on GitHub Actions: static checks → gating and non-gating Newman runs → HTML reports on GitHub Pages; nightly schedule
 
 ### [UI Test Automation: automationexercise.com](https://github.com/Anusreepsuresh074/automationexercise-ui-tests-eCommerce)
-![UI Tests](https://github.com/Anusreepsuresh074/automationexercise-ui-tests-eCommerce/actions/workflows/ui-tests.yml/badge.svg) · **[Live report](https://anusreepsuresh074.github.io/automationexercise-ui-tests-eCommerce/)**
+![UI Tests](https://github.com/Anusreepsuresh074/automationexercise-ui-tests-eCommerce/actions/workflows/ui-tests.yml/badge.svg) · **[Live report](https://anusreepsuresh074.github.io/automationexercise-ui-tests-eCommerce/)** · **[Test Summary Report](https://github.com/Anusreepsuresh074/automationexercise-ui-tests-eCommerce/blob/main/docs/test-summary-report.md)**
 
 End-to-end tests for an e-commerce site: browse, search, cart, signup/login, checkout, contact form and accessibility.
 
@@ -65,7 +65,7 @@ End-to-end tests for an e-commerce site: browse, search, cart, signup/login, che
 A hotel-booking REST API suite covering all 8 endpoints.
 
 - **Python + requests + pytest**, Service/API Object Model
-- **27 tests**: happy path, negative, boundary, auth/authz and **JSON Schema contract** checks
+- **29 tests**: happy path, negative, boundary, auth/authz and **JSON Schema contract** checks
 - **Read-your-write verification**: every write is confirmed with a follow-up read
 - Parallel runs, retries for transient network errors, Allure reporting, CI on GitHub Actions
 
